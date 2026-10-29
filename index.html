@@ -1,15 +1,16 @@
 <!DOCTYPE html>
-<html>
-	<head>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Dan's Random Projects</title>
 	<link rel="stylesheet" href="style.css">
-	</head>
-	<body>
-	<br>	
-	<h1><p style="background-color: black; opacity: 0.7; border:4px solid white; padding: 4px;">About</p></h1>
-	<img src="take_this.png" style="height: 200px; display: block; margin: 0 auto;" alt="Centered Image">
+</head>
+<body>
+	<h1 class="box">About</h1>
+	<img class="pic" src="take_this.png" alt="Centered Image">
 
-	<p style="background-color: black; opacity: 0.7; border:4px solid white; padding: 4px;">
+	<p class="box">
 	Welcome to my page, I'm glad you're here!. Over time I've made 
 	several projects. This page is to give them a personality, and
 	to help Google find it. Most of the things here tie into what are
@@ -19,7 +20,7 @@
 	what a program needs on your system to build without having to be
 	online, making your classic games available for playback via a 
 	mountable container so you don't have eat all your disk space, and
- 	random other things. All my work is on Debian stable. I make all 
+	random other things. All my work is on Debian stable. I make all 
 	my project MIT when possible. If you like what I do and	want to use 
 	it them please go ahead! I'd be very humbled someone likes what I do.
 	Just give me a credits line or something. Above all have fun and 
@@ -29,9 +30,8 @@
 	github main repo page</a>
 	</p>
 
-	<img src="cdcstore.png" height=200px style="display: block; margin: 0 auto;">
-	<p style="background-color: black; opacity: 0.7; border:4px solid white; padding: 4px;">
-	<br>
+	<img class="pic" src="cdcstore.png" alt="cdcstore">
+	<p class="box">
 	<a href="https://www.github.com/dannyboy76705/cdcstore"
 	target="_blank">
 	CDCstore github repo</a>
@@ -46,12 +46,13 @@
 	As you'll see I made all my tools to function on thier own, or integrate with my utilities I made
 	to make my flow easier. 
 	</p>
-	<br>
-	<img src="deb-buildcheck-suite.png" height=200px style="display: block; margin: 0 auto;">
-	<p style="background-color: black; opacity: 0.7; border:4px solid white; padding: 4px;">
+
+	<img class="pic" src="deb-buildcheck-suite.png" alt="deb-buildcheck-suite">
+	<p class="box">
 	<a href="https://www.github.com/dannyboy76705/deb-buildcheck-suite"
-        target="_blank">
-        Debain buildcheck github repo</a>
+	target="_blank">
+	Debain buildcheck github repo</a>
+	<br>
 	deb-buildcheck-suite is a collection of Debian focused utilites to aid in package creation. 
 	As of now there is configcheck, makecheck, and runcheck. Each utility uses Debian's offline
 	ability to read the supplied package database and show what packages are required for each
@@ -59,12 +60,12 @@
 	Meson support is planned but not yet implented. Yes AI can do this, but it can't do it offline
 	in a 100kb progam. This suite alone is the main reason I love Debian.
 	</p>
-	<br>
-	 <img src="mjpegsuite.png" height=200px style="display: block; margin: 0 auto;">
-        <p style="background-color: black; opacity: 0.7; border:4px solid white; padding: 4px;">
-        <a href="https://www.github.com/dannyboy76705/mjpegsuite"
-        target="_blank">
-        mjpegsuite repo</a>
+
+	<img class="pic" src="mjpegsuite.png" alt="mjpegsuite">
+	<p class="box">
+	<a href="https://www.github.com/dannyboy76705/mjpegsuite"
+	target="_blank">
+	mjpegsuite repo</a>
 	<br>
 	mjpeg suite is a tool to take a YUV4MPEG stream (file or piped) and break it down to JPEG
 	files for each frame. It does store aspect, colorspace etc. The main motivation for this
@@ -77,12 +78,12 @@
 	restart codes to make data more similar is possible. uncompressed repos will be bigger than 
 	other JPEG compressors, but will compress significantly better. 
 	</p>
-	<br>
- 	<img src="mkvgopsplit.png" height=200px style="display: block; margin: 0 auto;">
-        <p style="background-color: black; opacity: 0.7; border:4px solid white; padding: 4px;">
-        <a href="https://www.github.com/dannyboy76705/mkvgopsplit"
-        target="_blank">
-        mkvgopsplit repo</a>
+
+	<img class="pic" src="mkvgopsplit.png" alt="mkvgopsplit">
+	<p class="box">
+	<a href="https://www.github.com/dannyboy76705/mkvgopsplit"
+	target="_blank">
+	mkvgopsplit repo</a>
 	<br>
 	mkvgopsplit is a simple progam with two jobs: split a mkv video file up at GOP boundaries, and 
 	reassebmle them at later times. It's main motivation was to chop a GOP segment for submission
@@ -90,12 +91,12 @@
 	deduplicating MPEG-2 streams as there's little redudancy in the data. What redudancy there is 
 	was killed by a frame offset here and there duing encodes. 
 	</p>
-	<br>
-	<img src="sortof-suite.png" height=200px style="display: block; margin: 0 auto;">
-        <p style="background-color: black; opacity: 0.7; border:4px solid white; padding: 4px;">
-        <a href="https://www.github.com/dannyboy76705/sortof-suite"
-        target="_blank">
-        sortof-suite repo</a>
+
+	<img class="pic" src="sortof-suite.png" alt="sortof-suite">
+	<p class="box">
+	<a href="https://www.github.com/dannyboy76705/sortof-suite"
+	target="_blank">
+	sortof-suite repo</a>
 	<br>
 	sortof-suite si a group of sorters that sort of sort data some way (yes a play on words).
 	Each generate a lsit file suitible for tar.xz etc, Dwarfs, or zfrag. the main two is cdcsort and
@@ -103,12 +104,12 @@
 	faster as it incorporates a downscale to 32x32 before sorting. I've yet to find a video 
 	source where omiting this gave meaningfully better results. 
 	</p>
-	<br>
-	 <img src="zfrag.png" height=200px style="display: block; margin: 0 auto;">
-        <p style="background-color: black; opacity: 0.7; border:4px solid white; padding: 4px;">
-        <a href="https://www.github.com/dannyboy76705/zfrag"
-        target="_blank">
-        zfrag repo</a>
+
+	<img class="pic" src="zfrag.png" alt="zfrag">
+	<p class="box">
+	<a href="https://www.github.com/dannyboy76705/zfrag"
+	target="_blank">
+	zfrag repo</a>
 	<br>
 	zfrag is a container I made that is mountable and seekable. It is cdcstore and mjpegstore aware.
 	When used with them it will make two mount directories: a native and virtual. Native will be the 
@@ -118,30 +119,31 @@
 	also be extracted with a regular tar.zst workflow. if streaming from it 1MB frames are reccomended
 	while for cold storage all the way up to 32MB frames can be used.
 	</p>
-	<br>
-	<img src="zpaq-order.png" height=200px style="display: block; margin: 0 auto;">
-        <p style="background-color: black; opacity: 0.7; border:4px solid white; padding: 4px;">
-        <a href="https://www.github.com/dannyboy76705/zpaq-order"
-        target="_blank">
-        zpaq-order repo</a>
+
+	<img class="pic" src="zpaq-order.png" alt="zpaq-order">
+	<p class="box">
+	<a href="https://www.github.com/dannyboy76705/zpaq-order"
+	target="_blank">
+	zpaq-order repo</a>
 	<br>
 	zpaq-order is a fork of the original zpaq code. The only modification is it has the ability to 
 	take TAR style sortlists as input.
 	</p>
+
+	<img class="pic" src="zpaqfuse.png" alt="zpaqfuse">
+	<p class="box">
+	<a href="https://www.github.com/dannyboy76705/zpaqfuse"
+	target="_blank">
+	zpaqfuse repo</a>
 	<br>
-	<img src="zpaqfuse.png" height=200px style="display: block; margin: 0 auto;">
-        <p style="background-color: black; opacity: 0.7; border:4px solid white; padding: 4px;">
-        <a href="https://www.github.com/dannyboy76705/zpaqfuse"
-        target="_blank">
-        zpaqfuse repo</a>
 	zpaqfuse is a fuse mounter for zpaq archives. It's meant for use with the original zpaq in mind.
 	zpaqfranz has this built into it now. This is here mainly if you dont want to install zpaqfranz
 	or zpaq and you just want to mount a .zpaq archive. It is a *symmetrical* compressor so it is
 	slow. It does save you having to do a full extraction though and that is the whole point.
 	</p>
-	<br>
-	 <img src="thankyou.png" height=200px style="display: block; margin: 0 auto;">
-        <p style="background-color: black; opacity: 0.7; border:4px solid white; padding: 4px;">
+
+	<img class="pic" src="thankyou.png" alt="Thank you">
+	<p class="box">
 	I need to thank the following people/groups. Without them none of these would be possible:
 	<br><br>
 	--My Wife Katrina! without you I would of gave up a long time ago as I always thought who'd 
@@ -154,25 +156,25 @@
 	of my computers.<br><br>
 	--Zstandard Team: <a href="https://github.com/facebook/zstd" target="_blank"> Zstandard repo</a>
 	awesome compressor with a frugal lisence is what made zfrag possible.<br><br>
-	--ZPAQ: <a ref="https://github.com/zpaq/zpaq" target="_blank"> ZPAQ link</a>
+	--ZPAQ: <a href="https://github.com/zpaq/zpaq" target="_blank"> ZPAQ link</a>
 	the idea of fragments and a index came from this. still a solid archiver, so much so I made
 	zpaqfuse for it<br><br>
-	--zpaqfranz: <a ref="https://github.com/fcorbelli/zpaqfranz" target="_blank"> zpaqfranz repo</a>
+	--zpaqfranz: <a href="https://github.com/fcorbelli/zpaqfranz" target="_blank"> zpaqfranz repo</a>
 	awesome compressor that carries on the zpaq need. was very humbled the author wanted my fuse 
 	work and incorporated into it's project. for non time-sensetive needs this is the ticket. Only
 	reason I made zfrag was the fact zpaq is symmetrical by nature and that's not a flaw, it's a trait.<br><br>
-	--Claude: <a ref="www.claude.ai" target="_blank"> claude link</a>
+	--Claude: <a href="https://claude.ai" target="_blank"> claude link</a>
 	Say what you want, AI is useful. For me at least the $20 a month plan is well worth it for what 
 	abilites Claude has. As with anything it's only as good as you are and it will mirror and help as
 	much as you let it. <br><br>
-	--JPEG-Turbo: <a ref="https://github.com/libjpeg-turbo/libjpeg-turbo" target="_blank"> jpeg-turbo link</a>
+	--JPEG-Turbo: <a href="https://github.com/libjpeg-turbo/libjpeg-turbo" target="_blank"> jpeg-turbo link</a>
 	the implmentation I used for mjpegsuite. Tested, high quality, and aint going anywhere.<br><br>
 	--BroCode <a href="https://www.youtube.com/@BroCodez" target="_blank"> youtube channel link</a>
 	This person makes amazing tutorials for free (or donmation to his charity if you can). This 
 	entire page was made based of his teachings. If you want to learn coding in general check him out!<br><br>
-	</p>	
-	<h1><p style="background-color: black; opacity: 0.7; border:4px solid white; padding: 4px;">The End</>
-        <img src="take_this.png" style="height: 200px; display: block; margin: 0 auto;" alt="Centered Image>
+	</p>
 
+	<h1 class="box">The End</h1>
+	<img class="pic" src="take_this.png" alt="Centered Image">
 </body>
 </html>
