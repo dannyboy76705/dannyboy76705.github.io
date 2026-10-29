@@ -1,0 +1,29 @@
+@font-face{
+	src: url(cga.ttf);
+	font-family: arcade;
+}
+
+body{
+	background-image: url(folder.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-attachment: fixed;
+	background-size: cover;
+	font-family: arcade;
+	font-size: 1.0em;
+	color: white;
+	text-shadow:
+	-2px -2px black,
+	-2px -2px black,
+	-2px -2px black,
+	-2px -2px black;
+}
+
+box1{
+	border-style: solid;
+	border-color: black;
+	border-width: 4px;
+}
+h1{
+	text-align: center;
+}
